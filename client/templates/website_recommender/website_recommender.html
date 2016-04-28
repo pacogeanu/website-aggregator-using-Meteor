@@ -1,0 +1,13 @@
+<template name="website_recommender">
+	<div class="container">
+	<hr>
+	You might also see this:
+	{{#each recmds}}
+		<div class="well well-lg">
+			<a href="{{url}}">{{title}}</a>
+			<br>
+			{{description}}
+		</div>
+	{{/each}}
+	</div>
+</template>
